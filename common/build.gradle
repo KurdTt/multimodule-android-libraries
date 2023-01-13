@@ -1,0 +1,16 @@
+apply from: "${rootProject.projectDir}/config.gradle"
+apply from: "${rootProject.projectDir}/dependencies.gradle"
+
+android {
+    namespace 'com.pk.example.multimodule'
+
+    with projectDefaultConfig
+    with buildTypesConfig
+    with javaConfig
+}
+
+dependencies {
+    with projectDependencies
+}
+
+with mavenPublisher
