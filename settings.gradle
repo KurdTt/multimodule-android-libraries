@@ -16,3 +16,4 @@ rootProject.name = "Multimodule Android Library App"
 
 include ':common'
 include ':feature'
+include ':other-feature'
